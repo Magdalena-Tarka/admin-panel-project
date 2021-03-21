@@ -1,46 +1,44 @@
 /* Topbar */
 
 .topbar {
-    height: 60px;
-    width: 100%;
-    position: fixed;
-    text-align: right;
-    background-color: $light-bg-color;
-    color: $text-dk-color;
-    border-bottom: 2px solid $frame-color;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  text-align: right;
+  background-color: $light-bg-color;
+  color: $text-dk-color;
+  border-bottom: 2px solid $frame-color;
   
-    ul {
-      display: inline-flex;
-      text-align: center;
-      color: $text-md-color;
-      height: 100%;
+  ul {
+    display: inline-flex;
+    text-align: center;
+    color: $text-md-color;
+    height: 100%;
   
-      li {
-        border-left: 1.5px solid $frame-color;
-        padding: 18px 0;
-        cursor: pointer;
-        position: relative;
+    li {
+      border-left: 1.5px solid $frame-color;
+      padding: 18px 0;
+      cursor: pointer;
+      position: relative;
   
-        * {
-          padding: 0 8px;
-        }
+      * {
+        padding: 0 8px;
+      }
   
-        .icon-arrow-down {
-          font-size: 10px;
-        }
+      .icon-arrow-down {
+        font-size: 10px;
+      }
   
-        .icon-notification {
-          &::after {
-            position: absolute;
-            content: '';
-            height: 8px;
-            width: 8px;
-            border-radius: 50%;
-            background-color: $notification-color;
-            right: 15px;
-            top: 15px;
-          }
-        }
+      .icon-notification::after {
+        position: absolute;
+        content: '';
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background-color: $notification-color;
+        right: 15px;
+        top: 15px;
       }
     }
   }
+}

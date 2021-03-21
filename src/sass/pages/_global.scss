@@ -1,36 +1,36 @@
 *, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
   
-  body {
-    font-family: $paragraph-font;
-    color: $text-md-color;
-    font-size: $paragraph-font-size;
-  }
+body {
+  font-family: $paragraph-font;
+  color: $text-md-color;
+  font-size: $paragraph-font-size;
+}
   
-  ul {
-    list-style-type: none;
-  }
+ul {
+  list-style-type: none;
+}
   
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+a {
+  text-decoration: none;
+  color: inherit;
+}
   
-  button {
-    border: none;
-    color: inherit;
-    background-color: inherit;
-  }
+button {
+  border: none;
+  color: inherit;
+  background-color: inherit;
+}
   
-  small {
-    color: $span-color;
-  }
+small {
+  color: $span-color;
+}
   
-  .page-wrapper {
-    display: flex;
-    flex-wrap: row wrap;
-    background-color: $page-bg-color;
-  }
+.page-wrapper {
+  display: flex;
+  flex-wrap: row wrap;
+  background-color: $page-bg-color;
+}
