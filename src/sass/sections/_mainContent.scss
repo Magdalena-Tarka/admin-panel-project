@@ -1,0 +1,15 @@
+/* Main content */
+
+.main-content {
+    margin-top: 60px;
+    margin-left: 15%;
+    width: 100%;
+  
+    .subpage-wrapper {
+      margin: 15px;
+      background-color: $light-bg-color;
+      min-height: 700px;
+      max-width: 100%;
+      box-shadow: 0 0 10px 2px $frame-color;
+    }
+  }

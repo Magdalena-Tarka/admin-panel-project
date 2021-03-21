@@ -5,11 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Admin Panel</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="./vendor/bootstrap-grid/bootstrap-grid.css">
+    <link rel="stylesheet" href="./vendor/css/Glyphter.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+
+    <div class="page-wrapper">
+
+        <aside class="sidebar">
+            <div class="main-nav">
+                <a class="logo" href="#">Just do it</a>
+                <button class="menu-toggler"><i class="fas fa-bars"></i></button>
+            </div>
+            <ul class="sidebar-menu" id="mobile-menu">
+                <li><i class="icon-general icon"></i><a>General</a></li>
+                <li><i class="icon-details icon"></i><a>Details</a></li>
+                <li><i class="icon-links icon"></i><a>Links</a></li>
+                <li><i class="icon-banners icon"></i><a>Banners</a></li>
+                <li><i class="icon-personaldata icon"></i><a>Personal data</a></li>
+                <li><i class="icon-payout icon"></i><a>Payout</a></li>
+                <li><i class="icon-postback icon"></i><a>Postback</a></li>
+            </ul>
+            <div class="sidebar-chat">
+                <h3 class="sidebar-chat-title">Your Manager</h3>
+                <div class="sidebar-chat-list">
+                    <div class="sidebar-chat-img"><img src="./images/manager.png" alt=""></div>
+                    <a class="sidebar-chat-link link"><small>Michael E.</small></a>
+                </div>
+            </div>
+            <ul class="nav-bar vertical-list">
+                <li><a><i class="icon-wallet icon"></i><span>$1,500.00</span><i class="icon-arrow-down-small icon"></i></a></li>
+                <li><a><i class="icon-notification icon"></i></a></li>
+                <li><a><i class="icon-login icon"></i><small>Leonardo Dicaprio</small></a></li>
+                <li><a><i class="icon-quit icon"></i></a></li>
+            </ul>
+        </aside>
+
+        <nav class="topbar">
+            <ul class="topbar-menu horizontal-list">
+                <li><a><i class="icon-wallet icon"></i><span>$1,500.00</span><i class="icon-arrow-down icon"></i></a></li>
+                <li><a><i class="icon-notification icon"></i></a></li>
+                <li><a><i class="icon-profile icon"></i><small>Leonardo Dicaprio</small></a></li>
+                <li><a><i class="icon-quit icon"></i></a></li>
+            </ul>
+        </nav>
+
+        <section class="main-content">
+            <div class="subpage-wrapper"></div>
+        </section>
+    </div>
 
 </body>
 </html>

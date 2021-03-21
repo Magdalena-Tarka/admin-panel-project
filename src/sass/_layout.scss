@@ -1,0 +1,42 @@
+/* Grid */
+
+* {
+  box-sizing: border-box;
+}
+  
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+  
+.container-fluid {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Media */
+
+@media(max-width: 767px) {
+  @include grid('sm');
+}
+  
+@media(min-width: 768px) {
+  @include grid('md');
+}
+
+@media(min-width: 992px) {
+  @include grid('lg');
+}
+  
+@media(min-width: 1200px) {
+  @include grid('xl');
+}

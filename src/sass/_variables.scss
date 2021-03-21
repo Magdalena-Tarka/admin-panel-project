@@ -1,10 +1,25 @@
 /* Colors */
-$paragraph-color: #000000;
-$brand-main-color: #ff0000;
+$text-lgh-color: #f2f2f2;
+$text-md-color: #6e6e6e;
+$text-dk-color: #151515;
+
+$page-bg-color: #ebeae3;
+$light-bg-color: #fcfcfc;
+$dark-bg-color: #151515;
+$active-menu-color: #343434;
+
+$frame-color: #e5e5e5;
+$notification-color: #ef8337;
+$active-color: #00cd00;
+$span-color: #649296;
 
 /* Font sizes */
 $paragraph-font-size: 16px;
+$logo-font-size: 30px;
 
 /* Fonts */
-$brand-font: "Open Sans", Helvetica, Arial;
-$paragraph-font: "Open Sans", Helvetica, Arial;
+$brand-font: 'Rancho', cursive;
+$paragraph-font: 'Roboto', sans-serif;
+
+/* Transition */
+$transition: all 0.5s ease;
