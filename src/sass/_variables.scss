@@ -1,6 +1,6 @@
 /* Colors */
 $text-lgh-color: #f2f2f2;
-$text-md-color: #6e6e6e;
+$text-md-color: #999999;
 $text-dk-color: #151515;
 
 $page-bg-color: #ebeae3;
@@ -20,6 +20,10 @@ $logo-font-size: 30px;
 /* Fonts */
 $brand-font: 'Rancho', cursive;
 $paragraph-font: 'Roboto', sans-serif;
+$title-font: 'Roboto', sans-serif;
+
+/* Border */
+$section-border: 1.5px solid $frame-color;
 
 /* Transition */
 $transition: all 0.5s ease;

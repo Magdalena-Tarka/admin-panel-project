@@ -1,0 +1,13 @@
+.subpage-wrapper {
+  margin: 15px;
+  background-color: $light-bg-color;
+  min-height: 600px;
+  max-width: 100%;
+  box-shadow: 0 0 10px 2px $frame-color;
+
+  .subpage-title {
+    padding: 12px 24px;
+    border-bottom: $section-border;
+    color: $text-md-color;
+  }
+}

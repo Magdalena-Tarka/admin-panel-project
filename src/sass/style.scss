@@ -4,12 +4,15 @@
 @import "layout";
 
 /* Components */
+@import "components/logo";
+@import "components/hamburger";
+@import "components/subpageWrapper";
+@import "components/button";
+@import "components/datePicker";
 
 /* Sections */
 @import "sections/sidebar";
 @import "sections/topbar";
-@import "sections/mainContent";
-
 
 /* Pages / Views */
 @import "pages/global";

@@ -7,15 +7,15 @@
   text-align: right;
   background-color: $light-bg-color;
   color: $text-dk-color;
-  border-bottom: 2px solid $frame-color;
+  border-bottom: $section-border;
   
-  ul {
+  .topbar-menu {
     display: inline-flex;
     text-align: center;
     color: $text-md-color;
     height: 100%;
   
-    li {
+    .topbar-item {
       border-left: 1.5px solid $frame-color;
       padding: 18px 0;
       cursor: pointer;

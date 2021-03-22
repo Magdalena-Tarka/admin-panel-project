@@ -25,13 +25,19 @@
                 <button class="menu-toggler"><i class="fas fa-bars"></i></button>
             </div>
             <ul class="sidebar-menu" id="mobile-menu">
-                <li><i class="icon-general icon"></i><a>General</a></li>
-                <li><i class="icon-details icon"></i><a>Details</a></li>
-                <li><i class="icon-links icon"></i><a>Links</a></li>
-                <li><i class="icon-banners icon"></i><a>Banners</a></li>
-                <li><i class="icon-personaldata icon"></i><a>Personal data</a></li>
-                <li><i class="icon-payout icon"></i><a>Payout</a></li>
-                <li><i class="icon-postback icon"></i><a>Postback</a></li>
+                <li class="menu-item"><i class="icon-general icon"></i><a>General</a></li>
+                <li class="menu-item"><i class="icon-details icon"></i><a>Details</a></li>
+                <li class="menu-item"><i class="icon-links icon"></i><a>Links</a></li>
+                <li class="menu-item"><i class="icon-banners icon"></i><a>Banners</a></li>
+                <li class="menu-item"><i class="icon-personaldata icon"></i><a>Personal data</a></li>
+                <li class="menu-item"><i class="icon-payout icon"></i><a>Payout</a></li>
+                <li class="menu-item"><i class="icon-postback icon"></i><a>Postback</a></li>
+            </ul>
+            <ul class="sidebar-menu" id="vertical-list">
+                <li class="menu-item"><a><i class="icon-wallet icon"></i><span>$1,500.00</span><i class="icon-arrow-down-small icon"></i></a></li>
+                <li class="menu-item"><a><i class="icon-notification icon"></i></a></li>
+                <li class="menu-item"><a><i class="icon-login icon"></i><small>Leonardo Dicaprio</small></a></li>
+                <li class="menu-item"><a><i class="icon-quit icon"></i></a></li>
             </ul>
             <div class="sidebar-chat">
                 <h3 class="sidebar-chat-title">Your Manager</h3>
@@ -40,28 +46,34 @@
                     <a class="sidebar-chat-link link"><small>Michael E.</small></a>
                 </div>
             </div>
-            <ul class="nav-bar vertical-list">
-                <li><a><i class="icon-wallet icon"></i><span>$1,500.00</span><i class="icon-arrow-down-small icon"></i></a></li>
-                <li><a><i class="icon-notification icon"></i></a></li>
-                <li><a><i class="icon-login icon"></i><small>Leonardo Dicaprio</small></a></li>
-                <li><a><i class="icon-quit icon"></i></a></li>
-            </ul>
         </aside>
 
         <!--Topbar-->
         <nav class="topbar">
-            <ul class="topbar-menu horizontal-list">
-                <li><a><i class="icon-wallet icon"></i><span>$1,500.00</span><i class="icon-arrow-down icon"></i></a></li>
-                <li><a><i class="icon-notification icon"></i></a></li>
-                <li><a><i class="icon-profile icon"></i><small>Leonardo Dicaprio</small></a></li>
-                <li><a><i class="icon-quit icon"></i></a></li>
+            <ul class="topbar-menu" id="horizontal-list">
+                <li class="topbar-item"><a><i class="icon-wallet icon"></i><span>$1,500.00</span><i class="icon-arrow-down icon"></i></a></li>
+                <li class="topbar-item"><a><i class="icon-notification icon"></i></a></li>
+                <li class="topbar-item"><a><i class="icon-profile icon"></i><small>Leonardo Dicaprio</small></a></li>
+                <li class="topbar-item"><a><i class="icon-quit icon"></i></a></li>
             </ul>
         </nav>
 
         <!--Dashboard-->
-        <section class="main-content">
-            <div class="subpage-wrapper"></div>
-        </section>
+        <main class="main-content">
+            <section class="subpage-wrapper" id="general-statistic">
+                <h2 class="subpage-title">general statistic</h2>
+                <div class="date-picker-wrapper">
+                    <div class="date-picker">
+                        <form class="date-form">
+                            <input class="date-start" type="text" name="date" placeholder="19-05-2019">
+                            <input class="date-end" type="text" name="date" placeholder="19-05-2019">
+                            <i class="icon-calendar icon"></i>
+                        </form>
+                      <button class="btn btn-refresh"><i class="icon-refresh icon"></i></button>
+                    </div>
+                  </div>
+            </section>
+        </main>
     </div>
 
 </body>

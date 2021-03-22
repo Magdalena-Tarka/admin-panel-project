@@ -1,9 +1,73 @@
-/* Grid */
-
-* {
+/* Global */
+*, *::before, *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: $title-font;
+}
+
+h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: $title-font;
+}
+
+h4 {
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-family: $title-font;
+}
+
+p {
+  font-family: $paragraph-font;
+  font-size: $paragraph-font-size;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
   
+ul, ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+  
+button {
+  cursor: pointer;
+  border: none;
+  color: inherit;
+}
+  
+small {
+  color: $span-color;
+}
+  
+.page-wrapper {
+  display: flex;
+  flex-wrap: row wrap;
+  background-color: $page-bg-color;
+  font-family: $paragraph-font;
+  color: $text-md-color;
+  font-size: $paragraph-font-size;
+  margin: 0 auto;
+}
+
+.main-content {
+  margin-top: 60px;
+  width: 100%;
+}
+
+/* Grid */
+ 
 .container {
   width: 100%;
   max-width: 1170px;

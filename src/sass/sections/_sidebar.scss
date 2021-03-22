@@ -1,5 +1,3 @@
-/* Sidebar */
-
 .sidebar {
   position: fixed;
   background-color: $dark-bg-color;
@@ -14,14 +12,7 @@
   height: 60px;
   
   .logo {
-    font-family: $brand-font;
-    font-size: $logo-font-size;
     color: $text-lgh-color;
-  }
-  
-  .menu-toggler {
-    font-size: 24px;
-    cursor: pointer;
   }
 }
   
@@ -31,7 +22,7 @@
   border-bottom: 1.5px solid $active-menu-color;
   padding-bottom: 18px;
   
-  li {
+  .menu-item {
     width: 100%;
     padding: 12px 24px;
     display: flex;
@@ -100,6 +91,6 @@
   }
 }
   
-.vertical-list {
+#vertical-list {
   display: none;
 }

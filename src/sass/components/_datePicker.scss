@@ -1,0 +1,41 @@
+.date-picker-wrapper {
+  text-align: center;
+  padding: 32px;
+  border-bottom: $section-border;
+
+  .date-picker {
+    display: inline-flex;
+    flex-wrap: wrap;
+
+    .date-form {
+      border: $section-border;
+      border-radius: 4px;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      cursor: pointer;
+      margin-right: 12px;
+
+      input {
+        border: none;
+        background-color: inherit;
+        padding: 4px 12px;
+        cursor: pointer;
+        font-size: 14px;
+        max-width: 140px;
+        color: $text-dk-color;
+        font-family: $paragraph-font;
+        
+        &:first-child {
+          border-right: $section-border;
+        }
+      }
+
+      .icon::before {
+        color: $text-md-color;
+        padding: 12px;
+      }
+    } 
+  }
+}
