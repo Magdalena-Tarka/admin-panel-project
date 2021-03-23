@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="./vendor/bootstrap-grid/bootstrap-grid.css">
+    <!--<link rel="stylesheet" href="./vendor/bootstrap-grid/bootstrap-grid.css">-->
     <link rel="stylesheet" href="./vendor/css/Glyphter.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -60,21 +60,165 @@
 
         <!--Dashboard-->
         <main class="main-content">
+
+            <!--General Statistics-->
             <section class="subpage-wrapper" id="general-statistic">
                 <h2 class="subpage-title">general statistic</h2>
-                <div class="date-picker-wrapper">
+
+                <div class="date-picker-wrapper wrapper">
                     <div class="date-picker">
                         <form class="date-form">
                             <input class="date-start" type="text" name="date" placeholder="19-05-2019">
                             <input class="date-end" type="text" name="date" placeholder="19-05-2019">
                             <i class="icon-calendar icon"></i>
                         </form>
-                      <button class="btn btn-refresh"><i class="icon-refresh icon"></i></button>
+                        <button class="btn btn-refresh"><i class="icon-refresh icon"></i></button>
                     </div>
-                  </div>
+                </div>
+
+                <div class="chart-statistics-wrapper wrapper">
+                    <div class="row chart-statistics">
+                        <div class="col-md-6">
+                            <div class="row chart-statistics-detail left">
+                                <h4 class="chart-statistics-text">Visit Signups</h4>
+                                <p class="chart-statistics-value">124</p>
+                            </div>
+                            <div class="row chart-statistics-detail left">
+                                <h4 class="chart-statistics-text">FTD</h4>
+                                <p class="chart-statistics-value">445</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row chart-statistics-detail right">
+                                <h4 class="chart-statistics-text">Net deposit</h4>
+                                <p class="chart-statistics-value">564</p>
+                            </div>
+                            <div class="row chart-statistics-detail right">
+                                <h4 class="chart-statistics-text">Turn over</h4>
+                                <p class="chart-statistics-value">432</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chart-statistics">
+                        <h4>Earnings chart</h4>
+                        <div class="chart">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                    </div>
+                </div>
             </section>
+
+            <!--Links-->
+            <section class="subpage-wrapper" id="links">
+                <h2 class="subpage-title">links</h2>
+
+                <div class="btn-wrapper wrapper">
+                    <button class="btn" type="button">+ add new</button>
+                </div>
+
+                <div class="link-list-wrapper wrapper">
+                    <div class="list-item">
+                        <h4 class="list-item-title col-md-5">Home page</h4>
+                        <a class="list-item-link col-md-6" href="#">http://www.homepage.com</a>
+                        <div class="list-item-icons col-md-1">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="list-item-title col-md-5">Currently offer</h4>
+                        <a class="list-item-link col-md-6" href="#">http://www.currently.com</a>
+                        <div class="list-item-icons col-md-1">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="link-list-title col-md-5">Blurpix</h4>
+                        <a class="link-list-link col-md-6" href="#">http://www.blurpix.com</a>
+                        <div class="list-item-icons col-md-1">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="link-list-title col-md-5">Your site</h4>
+                        <a class="link-list-link col-md-6" href="#">http://www.yoursite.com</a>
+                        <div class="list-item-icons col-md-1">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="link-list-title col-md-5">Google</h4>
+                        <a class="link-list-link col-md-6" href="#">http://www.google.com</a>
+                        <div class="list-item-icons col-md-1">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="link-list-title col-md-5">Facebook</h4>
+                        <a class="link-list-link col-md-6" href="#">http://www.facebook.com</a>
+                        <div class="list-item-icons col-md-1">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="link-list-title col-md-5">Dashboard</h4>
+                        <a class="link-list-link col-md-6" href="#">http://www.dashboard.com</a>
+                        <div class="list-item-icons col-md-1">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="link-list-title col-md-5">Blurax</h4>
+                        <a class="link-list-link col-md-6" href="#">http://www.blurax.com</a>
+                        <div class="list-item-icons col-md-1">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="link-list-title col-md-5">Piece of Wine</h4>
+                        <a class="link-list-link col-md-6" href="#">http://www.pieceofwine.com</a>
+                        <div class="list-item-icons col-md-1">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="link-list-title col-md-5">Twitter</h4>
+                        <a class="link-list-link col-md-6" href="#">http://www.twitter.com</a>
+                        <div class="list-item-icons col-md-1">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-wrapper wrapper">
+                    <button class="btn" type="button">+ add new</button>
+                </div>
+            </section>
+
         </main>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="./js/script.js"></script>
 
 </body>
 </html>

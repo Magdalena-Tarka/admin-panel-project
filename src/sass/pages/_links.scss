@@ -1,0 +1,47 @@
+.btn-wrapper {
+  text-align: center;
+  padding: 32px;
+}
+
+.list-item {
+  width: 100%;
+  display: inline-flex;
+  padding: 18px;
+  border-bottom: $section-border;
+  cursor: pointer;
+
+  &:first-child {
+    border-top: $section-border;
+  }
+
+  a {
+    color: $span-color;
+  }
+
+  .list-item-icons {
+    display: flex;
+
+    i {
+      width: 100%;
+      position: relative;
+      visibility: hidden;
+  
+      &::before {
+        position: absolute;
+        right: 0;
+      }
+      
+      &:hover {
+        color: $notification-color;
+      }  
+    }
+  }
+
+  &:hover {
+    background-color: $frame-color;
+    
+    i {
+      visibility: visible;
+    }
+  }
+}

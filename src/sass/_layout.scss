@@ -18,9 +18,7 @@ h3 {
 }
 
 h4 {
-  font-size: 12px;
-  text-transform: capitalize;
-  font-weight: 500;
+  font-size: 16px;
   font-family: $title-font;
 }
 
@@ -58,7 +56,6 @@ small {
   font-family: $paragraph-font;
   color: $text-md-color;
   font-size: $paragraph-font-size;
-  margin: 0 auto;
 }
 
 .main-content {
@@ -66,10 +63,13 @@ small {
   width: 100%;
 }
 
+.wrapper {
+  padding: 0 15%;
+}
+
 /* Grid */
  
 .container {
-  width: 100%;
   max-width: 1170px;
   margin: 0 auto;
   padding-left: 15px;
@@ -86,6 +86,11 @@ small {
   display: flex;
   flex-wrap: wrap;
 }
+
+/*[class*="col-"] {
+  padding-left: 15px;
+  padding-right: 15px;
+}*/
 
 /* Media */
 

@@ -1,7 +1,8 @@
 /* Media */
 
 @media (max-width: 767px) {
-  //@include grid('sm');
+  @include grid('sm');
+  
   .sidebar {
     width: 100%;
         
@@ -16,7 +17,7 @@
 }
     
 @media (min-width: 768px) {
-  //@include grid('md');
+  @include grid('md');
     
   .sidebar {
     width: 20%;
@@ -37,12 +38,12 @@
 }
   
 @media (min-width: 992px) {
-  //@include grid('lg');
+  @include grid('lg');
 
 }
     
 @media (min-width: 1200px) {
-  //@include grid('xl');
+  @include grid('xl');
 
   .sidebar {
     width: 15%;

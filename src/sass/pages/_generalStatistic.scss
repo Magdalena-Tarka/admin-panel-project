@@ -1,0 +1,26 @@
+.chart-statistics {
+  justify-content: space-between;
+  padding: 24px  0;
+
+  .chart-statistics-detail {
+    justify-content: space-between;
+    padding: 18px 0 6px 0;
+    border-bottom: $section-border;
+
+    .chart-statistics-value {
+      color: $text-dk-color;
+    }
+  }
+
+  .left {
+    margin-right: 30px;
+  }
+
+  .right {
+    margin-left: 30px;
+  }
+}
+
+.chart {
+  margin: 24px 0;
+}
