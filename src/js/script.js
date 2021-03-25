@@ -3,6 +3,8 @@
 {
   'use strict';
 
+  /* Chart */
+
   const ctx = document.getElementById('myChart').getContext('2d');
 
   const chart = new Chart(ctx, {
@@ -38,5 +40,17 @@
     },
   });
   console.log(chart);
+
+  /* Toggle Mobile-Menu */
+
+  function toggleMenu(visible) {
+    document.getElementById('menu').classList.toggle('show-menu', visible);
+  }
+
+  document.querySelector('.menu-toggler').addEventListener('click', function(e) {
+    e.preventDefault();
+    console.log(e.target);
+    toggleMenu();
+  });
 
 }

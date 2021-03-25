@@ -1,24 +1,35 @@
 .sidebar {
-  position: fixed;
   background-color: $dark-bg-color;
-  z-index: 99;
-  height: 60px;
+  z-index: 98;
+  width: 100%;
 }
   
 .main-nav {
+  display: block;
+  background-color: $dark-bg-color;
+  width: 100%;
+  z-index: 99;
+
   padding: 16px;
   display: flex;
   justify-content: space-between;
   height: 60px;
+  position: fixed;
   
   .logo {
     color: $text-lgh-color;
   }
 }
+
+#menu {
+  display: block;
+  background-color: inherit;
+  padding-top: 60px;
+
   
+}
+
 .sidebar-menu {
-  padding: 0;
-  margin: 0;
   border-bottom: 1.5px solid $active-menu-color;
   padding-bottom: 18px;
   
@@ -31,6 +42,11 @@
     i::before {
       margin-right: 12px;
       font-size: 20px;
+    }
+
+    .icon-arrow-down::before {
+      padding-left: 12px;
+      font-size: 12px;
     }
 
     a {
@@ -46,7 +62,7 @@
     }
   }
 }
-  
+
 .sidebar-chat {
   margin-top: 18px;
   padding: 18px;
@@ -84,13 +100,9 @@
     }
       
     a {
-      position: absolute;
-      top: 50%;
-      left: 40%;
+      display: flex;
+      align-items: center;
+      padding-left: 12px;
     }
   }
-}
-  
-#vertical-list {
-  display: none;
 }

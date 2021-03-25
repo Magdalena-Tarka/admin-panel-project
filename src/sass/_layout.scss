@@ -43,6 +43,7 @@ button {
   cursor: pointer;
   border: none;
   color: inherit;
+  outline: none;
 }
   
 small {
@@ -50,8 +51,6 @@ small {
 }
   
 .page-wrapper {
-  display: flex;
-  flex-wrap: row wrap;
   background-color: $page-bg-color;
   font-family: $paragraph-font;
   color: $text-md-color;
@@ -87,14 +86,9 @@ small {
   flex-wrap: wrap;
 }
 
-/*[class*="col-"] {
-  padding-left: 15px;
-  padding-right: 15px;
-}*/
-
 /* Media */
 
-@media(max-width: 767px) {
+/*@media(max-width: 767px) {
   @include grid('sm');
 }
   
@@ -108,4 +102,4 @@ small {
   
 @media(min-width: 1200px) {
   @include grid('xl');
-}
+}*/

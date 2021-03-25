@@ -24,26 +24,27 @@
                 <a class="logo" href="#">Just do it</a>
                 <button class="menu-toggler"><i class="fas fa-bars"></i></button>
             </div>
-            <ul class="sidebar-menu" id="mobile-menu">
-                <li class="menu-item"><i class="icon-general icon"></i><a>General</a></li>
-                <li class="menu-item"><i class="icon-details icon"></i><a>Details</a></li>
-                <li class="menu-item"><i class="icon-links icon"></i><a>Links</a></li>
-                <li class="menu-item"><i class="icon-banners icon"></i><a>Banners</a></li>
-                <li class="menu-item"><i class="icon-personaldata icon"></i><a>Personal data</a></li>
-                <li class="menu-item"><i class="icon-payout icon"></i><a>Payout</a></li>
-                <li class="menu-item"><i class="icon-postback icon"></i><a>Postback</a></li>
-            </ul>
-            <ul class="sidebar-menu" id="vertical-list">
-                <li class="menu-item"><a><i class="icon-wallet icon"></i><span>$1,500.00</span><i class="icon-arrow-down-small icon"></i></a></li>
-                <li class="menu-item"><a><i class="icon-notification icon"></i></a></li>
-                <li class="menu-item"><a><i class="icon-login icon"></i><small>Leonardo Dicaprio</small></a></li>
-                <li class="menu-item"><a><i class="icon-quit icon"></i></a></li>
-            </ul>
-            <div class="sidebar-chat">
-                <h3 class="sidebar-chat-title">Your Manager</h3>
-                <div class="sidebar-chat-list">
-                    <div class="sidebar-chat-img"><img src="./images/manager.png" alt=""></div>
-                    <a class="sidebar-chat-link link"><small>Michael E.</small></a>
+            <div id="menu">
+                <ul class="sidebar-menu">
+                    <li class="menu-item"><i class="icon-general icon"></i><a>General</a></li>
+                    <li class="menu-item"><i class="icon-details icon"></i><a>Details</a></li>
+                    <li class="menu-item"><i class="icon-links icon"></i><a>Links</a></li>
+                    <li class="menu-item"><i class="icon-banners icon"></i><a>Banners</a></li>
+                    <li class="menu-item"><i class="icon-personaldata icon"></i><a>Personal data</a></li>
+                    <li class="menu-item"><i class="icon-payout icon"></i><a>Payout</a></li>
+                    <li class="menu-item"><i class="icon-postback icon"></i><a>Postback</a></li>
+                
+                    <li class="menu-item vertical-list"><i class="icon-wallet icon"></i><a><span>$1,500.00</span></a><i class="icon-arrow-down icon"></i></li>
+                    <li class="menu-item vertical-list"><i class="icon-notification icon"></i></li>
+                    <li class="menu-item vertical-list"><i class="icon-login icon"></i><a><small>Leonardo Dicaprio</small></a></li>
+                    <li class="menu-item vertical-list"><i class="icon-quit icon"></i></li>
+                </ul>
+                <div class="sidebar-chat">
+                    <h3 class="sidebar-chat-title">Your Manager</h3>
+                    <div class="sidebar-chat-list">
+                        <div class="sidebar-chat-img"><img src="./images/manager.png" alt=""></div>
+                        <a class="sidebar-chat-link link"><small>Michael E.</small></a>
+                    </div>
                 </div>
             </div>
         </aside>
@@ -78,7 +79,7 @@
 
                 <div class="chart-statistics-wrapper wrapper">
                     <div class="row chart-statistics">
-                        <div class="col-md-6">
+                        <div class="col-md-5">
                             <div class="row chart-statistics-detail left">
                                 <h4 class="chart-statistics-text">Visit Signups</h4>
                                 <p class="chart-statistics-value">124</p>
@@ -88,7 +89,7 @@
                                 <p class="chart-statistics-value">445</p>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-5">
                             <div class="row chart-statistics-detail right">
                                 <h4 class="chart-statistics-text">Net deposit</h4>
                                 <p class="chart-statistics-value">564</p>
@@ -119,90 +120,90 @@
 
                 <div class="link-list-wrapper wrapper">
                     <div class="list-item">
-                        <h4 class="list-item-title col-md-5">Home page</h4>
-                        <a class="list-item-link col-md-6" href="#">http://www.homepage.com</a>
-                        <div class="list-item-icons col-md-1">
+                        <h4 class="list-item-title">Home page</h4>
+                        <a class="list-item-link" href="#">http://www.homepage.com</a>
+                        <div class="list-item-icons">
                             <i class="icon-links"></i>
                             <i class="icon-trash"></i>
                         </div>
                     </div>
 
                     <div class="list-item">
-                        <h4 class="list-item-title col-md-5">Currently offer</h4>
-                        <a class="list-item-link col-md-6" href="#">http://www.currently.com</a>
-                        <div class="list-item-icons col-md-1">
+                        <h4 class="list-item-title">Currently offer</h4>
+                        <a class="list-item-link" href="#">http://www.currently.com</a>
+                        <div class="list-item-icons">
                             <i class="icon-links"></i>
                             <i class="icon-trash"></i>
                         </div>
                     </div>
 
                     <div class="list-item">
-                        <h4 class="link-list-title col-md-5">Blurpix</h4>
-                        <a class="link-list-link col-md-6" href="#">http://www.blurpix.com</a>
-                        <div class="list-item-icons col-md-1">
+                        <h4 class="list-item-title">Blurpix</h4>
+                        <a class="list-item-link" href="#">http://www.blurpix.com</a>
+                        <div class="list-item-icons">
                             <i class="icon-links"></i>
                             <i class="icon-trash"></i>
                         </div>
                     </div>
 
                     <div class="list-item">
-                        <h4 class="link-list-title col-md-5">Your site</h4>
-                        <a class="link-list-link col-md-6" href="#">http://www.yoursite.com</a>
-                        <div class="list-item-icons col-md-1">
+                        <h4 class="list-item-title">Your site</h4>
+                        <a class="list-item-link" href="#">http://www.yoursite.com</a>
+                        <div class="list-item-icons">
                             <i class="icon-links"></i>
                             <i class="icon-trash"></i>
                         </div>
                     </div>
 
                     <div class="list-item">
-                        <h4 class="link-list-title col-md-5">Google</h4>
-                        <a class="link-list-link col-md-6" href="#">http://www.google.com</a>
-                        <div class="list-item-icons col-md-1">
+                        <h4 class="list-item-title">Google</h4>
+                        <a class="list-item-link" href="#">http://www.google.com</a>
+                        <div class="list-item-icons">
                             <i class="icon-links"></i>
                             <i class="icon-trash"></i>
                         </div>
                     </div>
 
                     <div class="list-item">
-                        <h4 class="link-list-title col-md-5">Facebook</h4>
-                        <a class="link-list-link col-md-6" href="#">http://www.facebook.com</a>
-                        <div class="list-item-icons col-md-1">
+                        <h4 class="list-item-title">Facebook</h4>
+                        <a class="list-item-link" href="#">http://www.facebook.com</a>
+                        <div class="list-item-icons">
                             <i class="icon-links"></i>
                             <i class="icon-trash"></i>
                         </div>
                     </div>
 
                     <div class="list-item">
-                        <h4 class="link-list-title col-md-5">Dashboard</h4>
-                        <a class="link-list-link col-md-6" href="#">http://www.dashboard.com</a>
-                        <div class="list-item-icons col-md-1">
+                        <h4 class="list-item-title">Dashboard</h4>
+                        <a class="list-item-link" href="#">http://www.dashboard.com</a>
+                        <div class="list-item-icons">
                             <i class="icon-links"></i>
                             <i class="icon-trash"></i>
                         </div>
                     </div>
 
                     <div class="list-item">
-                        <h4 class="link-list-title col-md-5">Blurax</h4>
-                        <a class="link-list-link col-md-6" href="#">http://www.blurax.com</a>
-                        <div class="list-item-icons col-md-1">
+                        <h4 class="list-item-title">Blurax</h4>
+                        <a class="list-item-link" href="#">http://www.blurax.com</a>
+                        <div class="list-item-icons">
                             <i class="icon-links"></i>
                             <i class="icon-trash"></i>
                         </div>
                     </div>
 
                     <div class="list-item">
-                        <h4 class="link-list-title col-md-5">Piece of Wine</h4>
-                        <a class="link-list-link col-md-6" href="#">http://www.pieceofwine.com</a>
-                        <div class="list-item-icons col-md-1">
+                        <h4 class="list-item-title">Piece of Wine</h4>
+                        <a class="list-item-link" href="#">http://www.pieceofwine.com</a>
+                        <div class="list-item-icons">
                             <i class="icon-links"></i>
                             <i class="icon-trash"></i>
                         </div>
                     </div>
 
                     <div class="list-item">
-                        <h4 class="link-list-title col-md-5">Twitter</h4>
-                        <a class="link-list-link col-md-6" href="#">http://www.twitter.com</a>
-                        <div class="list-item-icons col-md-1">
+                        <h4 class="list-item-title">Twitter</h4>
+                        <a class="list-item-link" href="#">http://www.twitter.com</a>
+                        <div class="list-item-icons">
                             <i class="icon-links"></i>
                             <i class="icon-trash"></i>
                         </div>
