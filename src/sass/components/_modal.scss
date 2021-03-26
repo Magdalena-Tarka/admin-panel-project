@@ -66,7 +66,7 @@
     padding: 24px;
     
     .btn {
-    margin-left: 24px;
+      margin-left: 24px;
       
       &.btn-grey {
         background-color: $text-md-color;
@@ -83,48 +83,48 @@
 #modal-chat {
   padding: 0;
   width: 60%;
+}
 
-  .sidebar-chat.modal-chat {
-    padding: 0;
-    margin: 0;
-  
-    .chat-title {
-      width: 100%;
-      border-bottom: $section-border;
-      padding: 12px;
-    }
+.sidebar-chat.modal-chat {
+  padding: 0;
+  margin: 0;
 
-    .chat-list {
-      padding: 12px;
-      border-bottom: $section-border;
+  .chat-title {
+    width: 100%;
+    border-bottom: $section-border;
+    padding: 12px;
+  }
+
+  .chat-list {
+    padding: 12px;
+    border-bottom: $section-border;
+    cursor: default;
+
+    .chat-link {
+      color: $span-color;
       cursor: default;
-
-      .chat-link {
-        color: $span-color;
-        cursor: default;
-      }
     }
+  }
 
-    .chat-field {
-      min-height: 100px;
-      border-bottom: $section-border;
-    }
+  .chat-field {
+    min-height: 100px;
+    border-bottom: $section-border;
+  }
 
-    .chat-form {
+  .chat-form {
+    padding: 12px;
+    display: flex;
+
+    form {
+      border: $section-border;
+      border-radius: 4px;
+      align-self: center;
       padding: 12px;
-      display: flex;
+      margin-right: 12px;
+      width: 100%;
 
-      form {
-        border: $section-border;
-        border-radius: 4px;
-        align-self: center;
-        padding: 12px;
-        margin-right: 12px;
-        width: 100%;
-
-        .chat-input {
-          border: none;
-        }
+      .chat-input {
+        border: none;
       }
     }
   }
