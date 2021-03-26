@@ -41,6 +41,7 @@
   });
   console.log(chart);
 
+
   /* Toggle Mobile-Menu */
 
   function toggleMenu(visible) {
@@ -51,6 +52,61 @@
     e.preventDefault();
     console.log(e.target);
     toggleMenu();
+  });
+
+
+  /* Modals */
+
+  //Zamykanie modala poprzez usunięcie klasy 'show' z owerlaya
+  function closeModal() {
+    document.getElementById('overlay').classList.remove('show');
+  }
+
+  //Podpinamy funkcje pod przyciski 'js--close-modal'
+  document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      closeModal();
+    });
+  });
+
+  //Dodajemy możliwość zamknięcia modala po kliknięciu w tło overlaya
+  document.querySelector('#overlay').addEventListener('click', function(e) {
+    if(e.target === this) {
+      closeModal();
+    }
+  });
+
+  //oraz zamykanie przez kliknięcie ESC na klawiaturze
+  document.addEventListener('keyup', function(e) {
+    if(e.keyCode === 27) {
+      closeModal();
+    }
+  });
+
+  // OTWIERANIE MODALA
+  function openModal(modal) {
+    document.querySelectorAll('#overlay > *').forEach(function(modal) {
+      modal.classList.remove('show');
+    });
+    document.querySelector('#overlay').classList.add('show');
+    document.querySelector(modal).classList.add('show');
+  }
+
+  //openModal('#myModal');
+
+  /* Modal-Logout */
+  for(let button of document.querySelectorAll('.quit')) {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+      openModal('#modal-logout');
+    });
+  }
+
+  /* Modal-Chat */
+  document.querySelector('.chat-list').addEventListener('click', function(e) {
+    e.preventDefault();
+    openModal('#modal-chat');
   });
 
 }

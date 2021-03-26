@@ -8,6 +8,7 @@
   background-color: $light-bg-color;
   color: $text-dk-color;
   border-bottom: $section-border;
+  z-index: 9;
   
   .topbar-menu {
     display: inline-flex;

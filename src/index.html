@@ -34,16 +34,16 @@
                     <li class="menu-item"><i class="icon-payout icon"></i><a>Payout</a></li>
                     <li class="menu-item"><i class="icon-postback icon"></i><a>Postback</a></li>
                 
-                    <li class="menu-item vertical-list"><i class="icon-wallet icon"></i><a><span>$1,500.00</span></a><i class="icon-arrow-down icon"></i></li>
-                    <li class="menu-item vertical-list"><i class="icon-notification icon"></i></li>
-                    <li class="menu-item vertical-list"><i class="icon-login icon"></i><a><small>Leonardo Dicaprio</small></a></li>
-                    <li class="menu-item vertical-list"><i class="icon-quit icon"></i></li>
+                    <li class="menu-item wallet vertical-list"><i class="icon-wallet icon"></i><a><span>$1,500.00</span></a><i class="icon-arrow-down icon"></i></li>
+                    <li class="menu-item notification vertical-list"><i class="icon-notification icon"></i></li>
+                    <li class="menu-item login vertical-list"><i class="icon-login icon"></i><a><small>Leonardo Dicaprio</small></a></li>
+                    <li class="menu-item quit vertical-list"><i class="icon-quit icon"></i></li>
                 </ul>
                 <div class="sidebar-chat">
-                    <h3 class="sidebar-chat-title">Your Manager</h3>
-                    <div class="sidebar-chat-list">
-                        <div class="sidebar-chat-img"><img src="./images/manager.png" alt=""></div>
-                        <a class="sidebar-chat-link link"><small>Michael E.</small></a>
+                    <h3 class="chat-title">Your Manager</h3>
+                    <div class="chat-list">
+                        <div class="chat-img"><img src="./images/manager.png" alt=""></div>
+                        <a class="chat-link link"><small>Michael E.</small></a>
                     </div>
                 </div>
             </div>
@@ -52,10 +52,10 @@
         <!--Topbar-->
         <nav class="topbar">
             <ul class="topbar-menu" id="horizontal-list">
-                <li class="topbar-item"><a><i class="icon-wallet icon"></i><span>$1,500.00</span><i class="icon-arrow-down icon"></i></a></li>
-                <li class="topbar-item"><a><i class="icon-notification icon"></i></a></li>
-                <li class="topbar-item"><a><i class="icon-profile icon"></i><small>Leonardo Dicaprio</small></a></li>
-                <li class="topbar-item"><a><i class="icon-quit icon"></i></a></li>
+                <li class="topbar-item wallet"><a><i class="icon-wallet icon"></i><span>$1,500.00</span><i class="icon-arrow-down icon"></i></a></li>
+                <li class="topbar-item notification"><a><i class="icon-notification icon"></i></a></li>
+                <li class="topbar-item profile"><a><i class="icon-profile icon"></i><small>Leonardo Dicaprio</small></a></li>
+                <li class="topbar-item quit"><a><i class="icon-quit icon"></i></a></li>
             </ul>
         </nav>
 
@@ -214,6 +214,41 @@
                     <button class="btn" type="button">+ add new</button>
                 </div>
             </section>
+
+        <!--Modal-1-->
+        <div class="modals">
+            <div class="overlay" id="overlay">
+
+                <div class="modal" id="modal-logout">
+                    <div class="btn-close js--close-modal">x</div>
+                    <h4 class="modal-logout-title">Do you really want to Quit?</h4>
+                    <div class="modal-logout-buttons">
+                        <button class="btn btn-grey js--close-modal">Cancel</button>
+                        <button class="btn btn-orange js--close-modal">Quit</button>
+                    </div>
+                </div>
+
+                <div class="modal" id="modal-chat">
+                    <div class="btn-close js--close-modal">x</div>
+                    <div class="sidebar-chat modal-chat">
+                        <h3 class="chat-title">Online chat with your personal manager</h3>
+                        <div class="chat-list">
+                            <div class="chat-img"><img src="./images/manager.png" alt=""></div>
+                            <a class="chat-link link"><span>Michael Ekwueme</span></a>
+                        </div>
+                        <div class="chat-field"></div>
+                        <div class="chat-form">
+                            <form>
+                                <i class="icon-message icon"></i>
+                                <input class="chat-input" type="text" placeholder="Enter your message..">
+                            </form>
+                            <button class="btn js--close-modal">Send</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
 
         </main>
     </div>

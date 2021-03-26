@@ -68,17 +68,17 @@
   padding: 18px;
   position: relative;
   
-  .sidebar-chat-title {
+  .chat-title {
     text-transform: uppercase;
     font-size: 16px;
   }
   
-  .sidebar-chat-list {
+  .chat-list {
     display: flex;
     padding: 12px 0;
     cursor: pointer;
   
-    .sidebar-chat-img {
+    .chat-img {
       position: relative;
     
       img {
