@@ -115,20 +115,30 @@
       }
     }
   }
+
+  .list-item .list-item-icons {
+    transform: scale(1);
+  }
 }
   
 @media (min-width: 992px) {
   @include grid('lg');
 
   .list-item {
-    display: inline-flex;
-  
+    padding: 18px;
+
     .list-item-title {
-      flex: 0 0 40%;
+      flex: 0 0 30%;
     }
   
     .list-item-link {
       font-size: $paragraph-font-size;
+      order: 2;
+      flex: 1;
+    }
+
+    .list-item-icons {
+      order: 3;
     }
   }
 }

@@ -24,18 +24,18 @@
                 <button class="menu-toggler"><i class="fas fa-bars"></i></button>
             </div>
             <div id="menu">
-                <ul class="sidebar-menu" id="sidebar-menu">
-                    <li class="menu-item main-nav-item" data-id="#general"><i class="icon-general icon"></i><a>General</a></li>
-                    <li class="menu-item main-nav-item" data-id="#details"><i class="icon-details icon"></i><a>Details</a></li>
-                    <li class="menu-item main-nav-item" data-id="#links"><i class="icon-links icon"></i><a>Links</a></li>
-                    <li class="menu-item main-nav-item" data-id="#banners"><i class="icon-banners icon"></i><a>Banners</a></li>
-                    <li class="menu-item main-nav-item" data-id="#personalData"><i class="icon-personaldata icon"></i><a>Personal data</a></li>
-                    <li class="menu-item main-nav-item" data-id="#payout"><i class="icon-payout icon"></i><a>Payout</a></li>
-                    <li class="menu-item main-nav-item" data-id="#postback"><i class="icon-postback icon"></i><a>Postback</a></li>
+                <ul class="sidebar-menu">
+                    <li class="menu-item main-nav-item"><i class="icon-general icon"></i><a href="#general">General</a></li>
+                    <li class="menu-item main-nav-item"><i class="icon-details icon"></i><a href="#details">Details</a></li>
+                    <li class="menu-item main-nav-item"><i class="icon-links icon"></i><a href="#links">Links</a></li>
+                    <li class="menu-item main-nav-item"><i class="icon-banners icon"></i><a href="#banners">Banners</a></li>
+                    <li class="menu-item main-nav-item"><i class="icon-personaldata icon"></i><a href="#personal-data">Personal data</a></li>
+                    <li class="menu-item main-nav-item"><i class="icon-payout icon"></i><a href="#payout">Payout</a></li>
+                    <li class="menu-item main-nav-item"><i class="icon-postback icon"></i><a href="#postback">Postback</a></li>
                 
-                    <li class="menu-item wallet vertical-list"><i class="icon-wallet icon"></i><a><span>$1,500.00</span></a><i class="icon-arrow-down icon"></i></li>
+                    <li class="menu-item wallet vertical-list"><i class="icon-wallet icon"></i><a href="#"><span>$1,500.00</span></a><i class="icon-arrow-down icon"></i></li>
                     <li class="menu-item notification vertical-list"><i class="icon-notification icon"></i></li>
-                    <li class="menu-item login vertical-list"><i class="icon-login icon"></i><a><small>Leonardo Dicaprio</small></a></li>
+                    <li class="menu-item login vertical-list"><i class="icon-profile icon"></i><a href="#"><small>Leonardo Dicaprio</small></a></li>
                     <li class="menu-item quit vertical-list modal-btn" data-modal="modal-logout"><i class="icon-quit icon"></i></li>
                 </ul>
                 <div class="sidebar-chat">
@@ -51,10 +51,10 @@
         <!--Topbar-->
         <nav class="topbar">
             <ul class="topbar-menu" id="horizontal-list">
-                <li class="topbar-item wallet"><a><i class="icon-wallet icon"></i><span>$1,500.00</span><i class="icon-arrow-down icon"></i></a></li>
-                <li class="topbar-item notification"><a><i class="icon-notification icon"></i></a></li>
-                <li class="topbar-item profile"><a><i class="icon-profile icon"></i><small>Leonardo Dicaprio</small></a></li>
-                <li class="topbar-item quit modal-btn" data-modal="modal-logout"><a><i class="icon-quit icon"></i></a></li>
+                <li class="topbar-item wallet"><a href="#"><i class="icon-wallet icon"></i><span>$1,500.00</span><i class="icon-arrow-down icon"></i></a></li>
+                <li class="topbar-item notification"><a href="#"><i class="icon-notification icon"></i></a></li>
+                <li class="topbar-item profile"><a href="#"><i class="icon-profile icon"></i><small>Leonardo Dicaprio</small></a></li>
+                <li class="topbar-item quit modal-btn" data-modal="modal-logout"><a href="#"><i class="icon-quit icon"></i></a></li>
             </ul>
         </nav>
 
@@ -62,7 +62,7 @@
         <main class="main-content">
 
             <!--General Statistics-->
-            <section class="subpage-wrapper activePage" id="general-statistic">
+            <section class="subpage-wrapper" id="general">
                 <h2 class="subpage-title">general statistic</h2>
 
                 <div class="date-picker-wrapper wrapper">
@@ -79,21 +79,21 @@
                 <div class="chart-statistics-wrapper wrapper">
                     <div class="row chart-statistics">
                         <div class="col-md-5">
-                            <div class="row chart-statistics-detail left">
+                            <div class="row chart-statistics-detail">
                                 <h4 class="chart-statistics-text">Visit Signups</h4>
                                 <p class="chart-statistics-value">124</p>
                             </div>
-                            <div class="row chart-statistics-detail left">
+                            <div class="row chart-statistics-detail">
                                 <h4 class="chart-statistics-text">FTD</h4>
                                 <p class="chart-statistics-value">445</p>
                             </div>
                         </div>
                         <div class="col-md-5">
-                            <div class="row chart-statistics-detail right">
+                            <div class="row chart-statistics-detail">
                                 <h4 class="chart-statistics-text">Net deposit</h4>
                                 <p class="chart-statistics-value">564</p>
                             </div>
-                            <div class="row chart-statistics-detail right">
+                            <div class="row chart-statistics-detail">
                                 <h4 class="chart-statistics-text">Turn over</h4>
                                 <p class="chart-statistics-value">432</p>
                             </div>
@@ -117,7 +117,7 @@
                     <button class="btn" type="button">+ add new</button>
                 </div>
 
-                <div class="link-list-wrapper wrapper">
+                <div class="list-wrapper wrapper">
                     <div class="list-item">
                         <h4 class="list-item-title">Home page</h4>
                         <a class="list-item-link" href="#">http://www.homepage.com</a>
@@ -222,6 +222,85 @@
             <!--Banners-->
             <section class="subpage-wrapper" id="banners">
                 <h2 class="subpage-title">banners</h2>
+
+                <div class="btn-wrapper wrapper">
+                    <button class="btn" type="button">+ add new</button>
+                </div>
+
+                <div class="list-wrapper wrapper">
+                    <div class="list-item">
+                        <h4 class="list-item-title">Banner main</h4>
+                        <a class="list-item-link" href="#">http://www.website.com/main.gif</a>
+                        <div class="list-item-icons">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="list-item-title">Sign up banner</h4>
+                        <a class="list-item-link" href="#">http://www.website.com/signup.gif</a>
+                        <div class="list-item-icons">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="list-item-title">Banner left side</h4>
+                        <a class="list-item-link" href="#">http://www.website.com/leftside.gif</a>
+                        <div class="list-item-icons">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="list-item-title">Vertical banner</h4>
+                        <a class="list-item-link" href="#">http://www.website.com/vert.gif</a>
+                        <div class="list-item-icons">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="list-item-title">Front banner</h4>
+                        <a class="list-item-link" href="#">http://www.website.com/front.gif</a>
+                        <div class="list-item-icons">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="list-item-title">Horizontal banner</h4>
+                        <a class="list-item-link" href="#">http://www.website.com/horizontal.gif</a>
+                        <div class="list-item-icons">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-wrapper wrapper">
+                    <button class="btn" type="button">+ add new</button>
+                </div>
+            </section>
+
+            <!--Personal Data-->
+            <section class="subpage-wrapper" id="personal-data">
+                <h2 class="subpage-title">personal data</h2>
+            </section>
+
+            <!--Payout-->
+            <section class="subpage-wrapper" id="payout">
+                <h2 class="subpage-title">payout</h2>
+            </section>
+
+            <!--Postback-->
+            <section class="subpage-wrapper" id="postback">
+                <h2 class="subpage-title">postback</h2>
             </section>
 
             <!--Modal-1-->
@@ -243,7 +322,7 @@
                             <h3 class="chat-title">Online chat with your personal manager</h3>
                             <div class="chat-list">
                                 <div class="chat-img"><img src="./images/manager.png" alt=""></div>
-                                <a class="chat-link link"><span>Michael Ekwueme</span></a>
+                                <a class="chat-link link" href="#"><span>Michael Ekwueme</span></a>
                             </div>
                             <div class="chat-field"></div>
                             <div class="chat-form">

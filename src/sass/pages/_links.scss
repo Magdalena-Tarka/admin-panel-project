@@ -5,32 +5,34 @@
 
 .list-item {
   width: 100%;
-  padding: 18px;
+  padding: 12px;
   border-bottom: $section-border;
   cursor: pointer;
-  display: block;
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 
   &:first-child {
     border-top: $section-border;
   }
 
+  .list-item-title {
+    order: 1;
+    flex: 1;
+  }
+
   .list-item-link {
     color: $span-color;
     font-size: 14px;
+    order: 3;
+    flex: 0 0 100%;
   }
 
   .list-item-icons {
-    display: inline-flex;
-    position: absolute;
-    right: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    align-items: center;
+    order: 2;
+    transform: scale(0.8);
 
     i {
-      position: relative;
-      display: inline;
       margin-left: 12px;
       visibility: hidden;
       

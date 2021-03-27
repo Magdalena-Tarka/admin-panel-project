@@ -9,7 +9,6 @@
   background-color: $dark-bg-color;
   width: 100%;
   z-index: 99;
-
   padding: 16px;
   display: flex;
   justify-content: space-between;
@@ -25,8 +24,6 @@
   display: block;
   background-color: inherit;
   padding-top: 60px;
-
-  
 }
 
 .sidebar-menu {
@@ -37,7 +34,12 @@
     width: 100%;
     padding: 12px 24px;
     display: flex;
-    align-items: center;
+    border-left: 4px solid transparent;
+
+    * {
+      display: flex;
+      align-items: center;
+    }
 
     i::before {
       margin-right: 12px;

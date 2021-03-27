@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+body {
+  background-color: $page-bg-color;
+}
+
 h2 {
   font-size: 18px;
   text-transform: uppercase;
@@ -51,7 +55,6 @@ small {
 }
   
 .page-wrapper {
-  background-color: $page-bg-color;
   font-family: $paragraph-font;
   color: $text-md-color;
   font-size: $paragraph-font-size;
@@ -60,13 +63,14 @@ small {
 .main-content {
   margin-top: 60px;
   width: 100%;
+  height: 100%;
 }
 
 .subpage-wrapper {
   display: none;
 }
 
-.activePage {
+.active-page {
   display: block;
 }
 
@@ -93,21 +97,3 @@ small {
   display: flex;
   flex-wrap: wrap;
 }
-
-/* Media */
-
-/*@media(max-width: 767px) {
-  @include grid('sm');
-}
-  
-@media(min-width: 768px) {
-  @include grid('md');
-}
-
-@media(min-width: 992px) {
-  @include grid('lg');
-}
-  
-@media(min-width: 1200px) {
-  @include grid('xl');
-}*/
