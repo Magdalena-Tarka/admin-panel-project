@@ -93,20 +93,69 @@
     document.querySelector(modal).classList.add('show');
   }
 
-  //openModal('#myModal');
+  // Nasłuchiwacz na wszystkie modale (do elementu nalezy tylko dodać class="modal-btn" oraz atrybut data-modal="id modala")
+  for(let modalElem of document.querySelectorAll('.modal-btn')) {
 
-  /* Modal-Logout */
-  for(let button of document.querySelectorAll('.quit')) {
-    button.addEventListener('click', function(e) {
+    modalElem.addEventListener('click', function(e) {
       e.preventDefault();
-      openModal('#modal-logout');
+      let clickedModal = e.target.getAttribute('data-modal') || e.currentTarget.getAttribute('data-modal');
+      openModal('#' + clickedModal);
     });
   }
 
-  /* Modal-Chat */
-  document.querySelector('.chat-list').addEventListener('click', function(e) {
-    e.preventDefault();
-    openModal('#modal-chat');
-  });
+  /* Init Pages */
+
+  const mainNav = {
+    
+    initPages: function() {
+
+      this.pages = document.querySelector('#sidebar-menu').children;
+      this.navLinks = document.querySelectorAll('.main-nav-item');
+      console.log('this.pages:', this.pages);
+      console.log('this.navLinks:', this.navLinks);
+  
+      const idFromHash = window.location.hash.replace('#/', '');
+      let pageMatchingHash = this.pages[0].id;
+  
+      for(let page of this.pages) {
+        if(page.id == idFromHash) {
+          pageMatchingHash = page.id;
+          break;
+        }
+      }
+      console.log('pageMatchingHash:', pageMatchingHash);
+      this.activatePage(pageMatchingHash);
+  
+      for(let link of this.navLinks) {
+        link.addEventListener('click', function(e) {
+          const clickedElement = this;
+          console.log('1. clickedElement:', clickedElement);
+          e.preventDefault();
+  
+          const id = clickedElement.getAttribute('data-id').replace('#', '');
+          mainNav.activatePage(id);
+          window.location.hash = '#/' + id;
+        });
+      }
+    },
+  
+    activatePage: function(pageId) {
+      
+      for(let page of this.pages) {
+        page.classList.toggle('activePage', page.id == pageId);
+      }
+
+      for(let link of this.navLinks) {
+        link.classList.toggle('activePage', link.getAttribute('data-id') == '#' + pageId
+        );
+      }
+    },
+      
+    init: function() {
+      console.log('*** Welcome ***');
+      this.initPages();
+    },
+  };
+  mainNav.init();
 
 }

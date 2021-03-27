@@ -62,6 +62,14 @@ small {
   width: 100%;
 }
 
+.subpage-wrapper {
+  display: none;
+}
+
+.activePage {
+  display: block;
+}
+
 .wrapper {
   padding: 0 15%;
 }

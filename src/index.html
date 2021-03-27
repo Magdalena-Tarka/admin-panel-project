@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
-    <!--<link rel="stylesheet" href="./vendor/bootstrap-grid/bootstrap-grid.css">-->
     <link rel="stylesheet" href="./vendor/css/Glyphter.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -25,23 +24,23 @@
                 <button class="menu-toggler"><i class="fas fa-bars"></i></button>
             </div>
             <div id="menu">
-                <ul class="sidebar-menu">
-                    <li class="menu-item"><i class="icon-general icon"></i><a>General</a></li>
-                    <li class="menu-item"><i class="icon-details icon"></i><a>Details</a></li>
-                    <li class="menu-item"><i class="icon-links icon"></i><a>Links</a></li>
-                    <li class="menu-item"><i class="icon-banners icon"></i><a>Banners</a></li>
-                    <li class="menu-item"><i class="icon-personaldata icon"></i><a>Personal data</a></li>
-                    <li class="menu-item"><i class="icon-payout icon"></i><a>Payout</a></li>
-                    <li class="menu-item"><i class="icon-postback icon"></i><a>Postback</a></li>
+                <ul class="sidebar-menu" id="sidebar-menu">
+                    <li class="menu-item main-nav-item" data-id="#general"><i class="icon-general icon"></i><a>General</a></li>
+                    <li class="menu-item main-nav-item" data-id="#details"><i class="icon-details icon"></i><a>Details</a></li>
+                    <li class="menu-item main-nav-item" data-id="#links"><i class="icon-links icon"></i><a>Links</a></li>
+                    <li class="menu-item main-nav-item" data-id="#banners"><i class="icon-banners icon"></i><a>Banners</a></li>
+                    <li class="menu-item main-nav-item" data-id="#personalData"><i class="icon-personaldata icon"></i><a>Personal data</a></li>
+                    <li class="menu-item main-nav-item" data-id="#payout"><i class="icon-payout icon"></i><a>Payout</a></li>
+                    <li class="menu-item main-nav-item" data-id="#postback"><i class="icon-postback icon"></i><a>Postback</a></li>
                 
                     <li class="menu-item wallet vertical-list"><i class="icon-wallet icon"></i><a><span>$1,500.00</span></a><i class="icon-arrow-down icon"></i></li>
                     <li class="menu-item notification vertical-list"><i class="icon-notification icon"></i></li>
                     <li class="menu-item login vertical-list"><i class="icon-login icon"></i><a><small>Leonardo Dicaprio</small></a></li>
-                    <li class="menu-item quit vertical-list"><i class="icon-quit icon"></i></li>
+                    <li class="menu-item quit vertical-list modal-btn" data-modal="modal-logout"><i class="icon-quit icon"></i></li>
                 </ul>
                 <div class="sidebar-chat">
                     <h3 class="chat-title">Your Manager</h3>
-                    <div class="chat-list">
+                    <div class="chat-list modal-btn" data-modal="modal-chat">
                         <div class="chat-img"><img src="./images/manager.png" alt=""></div>
                         <a class="chat-link link"><small>Michael E.</small></a>
                     </div>
@@ -55,7 +54,7 @@
                 <li class="topbar-item wallet"><a><i class="icon-wallet icon"></i><span>$1,500.00</span><i class="icon-arrow-down icon"></i></a></li>
                 <li class="topbar-item notification"><a><i class="icon-notification icon"></i></a></li>
                 <li class="topbar-item profile"><a><i class="icon-profile icon"></i><small>Leonardo Dicaprio</small></a></li>
-                <li class="topbar-item quit"><a><i class="icon-quit icon"></i></a></li>
+                <li class="topbar-item quit modal-btn" data-modal="modal-logout"><a><i class="icon-quit icon"></i></a></li>
             </ul>
         </nav>
 
@@ -63,7 +62,7 @@
         <main class="main-content">
 
             <!--General Statistics-->
-            <section class="subpage-wrapper" id="general-statistic">
+            <section class="subpage-wrapper activePage" id="general-statistic">
                 <h2 class="subpage-title">general statistic</h2>
 
                 <div class="date-picker-wrapper wrapper">
@@ -215,40 +214,50 @@
                 </div>
             </section>
 
-        <!--Modal-1-->
-        <div class="modals">
-            <div class="overlay" id="overlay">
+            <!--Details-->
+            <section class="subpage-wrapper" id="details">
+                <h2 class="subpage-title">details</h2>
+            </section>
 
-                <div class="modal" id="modal-logout">
-                    <div class="btn-close js--close-modal">x</div>
-                    <h4 class="modal-logout-title">Do you really want to Quit?</h4>
-                    <div class="modal-logout-buttons">
-                        <button class="btn btn-grey js--close-modal">Cancel</button>
-                        <button class="btn btn-orange js--close-modal">Quit</button>
-                    </div>
-                </div>
+            <!--Banners-->
+            <section class="subpage-wrapper" id="banners">
+                <h2 class="subpage-title">banners</h2>
+            </section>
 
-                <div class="modal" id="modal-chat">
-                    <div class="btn-close js--close-modal">x</div>
-                    <div class="sidebar-chat modal-chat">
-                        <h3 class="chat-title">Online chat with your personal manager</h3>
-                        <div class="chat-list">
-                            <div class="chat-img"><img src="./images/manager.png" alt=""></div>
-                            <a class="chat-link link"><span>Michael Ekwueme</span></a>
-                        </div>
-                        <div class="chat-field"></div>
-                        <div class="chat-form">
-                            <form>
-                                <i class="icon-message icon"></i>
-                                <input class="chat-input" type="text" placeholder="Enter your message..">
-                            </form>
-                            <button class="btn js--close-modal">Send</button>
+            <!--Modal-1-->
+            <div class="modals">
+                <div class="overlay" id="overlay">
+
+                    <div class="modal" id="modal-logout">
+                        <div class="btn-close js--close-modal">x</div>
+                        <h4 class="modal-logout-title">Do you really want to Quit?</h4>
+                        <div class="modal-logout-buttons">
+                            <button class="btn btn-grey js--close-modal">Cancel</button>
+                            <button class="btn btn-orange js--close-modal">Quit</button>
                         </div>
                     </div>
+
+                    <div class="modal" id="modal-chat">
+                        <div class="btn-close js--close-modal">x</div>
+                        <div class="sidebar-chat modal-chat">
+                            <h3 class="chat-title">Online chat with your personal manager</h3>
+                            <div class="chat-list">
+                                <div class="chat-img"><img src="./images/manager.png" alt=""></div>
+                                <a class="chat-link link"><span>Michael Ekwueme</span></a>
+                            </div>
+                            <div class="chat-field"></div>
+                            <div class="chat-form">
+                                <form>
+                                    <i class="icon-message icon"></i>
+                                    <input class="chat-input" type="text" placeholder="Enter your message..">
+                                </form>
+                                <button class="btn js--close-modal">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
-                
             </div>
-        </div>
 
         </main>
     </div>

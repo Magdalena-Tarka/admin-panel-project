@@ -79,6 +79,10 @@
 
     .main-nav {
       position: static;
+
+      .menu-toggler {
+        display: none;
+      }
     }
 
     #menu {
