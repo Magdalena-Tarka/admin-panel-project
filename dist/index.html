@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Panel</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./vendor/css/Glyphter.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+
+        <!--Sidebar-->
+        <aside class="sidebar">
+            <div class="main-nav">
+                <a class="logo" href="#">Just do it</a>
+                <button class="menu-toggler"><i class="fas fa-bars"></i></button>
+            </div>
+            <div id="menu">
+                <ul class="sidebar-menu">
+                    <li class="menu-item main-nav-item"><i class="icon-general icon"></i><a href="#general">General</a></li>
+                    <li class="menu-item main-nav-item"><i class="icon-details icon"></i><a href="#details">Details</a></li>
+                    <li class="menu-item main-nav-item"><i class="icon-links icon"></i><a href="#links">Links</a></li>
+                    <li class="menu-item main-nav-item"><i class="icon-banners icon"></i><a href="#banners">Banners</a></li>
+                    <li class="menu-item main-nav-item"><i class="icon-personaldata icon"></i><a href="#personal-data">Personal data</a></li>
+                    <li class="menu-item main-nav-item"><i class="icon-payout icon"></i><a href="#payout">Payout</a></li>
+                    <li class="menu-item main-nav-item"><i class="icon-postback icon"></i><a href="#postback">Postback</a></li>
+                
+                    <li class="menu-item wallet vertical-list"><i class="icon-wallet icon"></i><a href="#"><span>$1,500.00</span></a><i class="icon-arrow-down icon"></i></li>
+                    <li class="menu-item notification vertical-list"><i class="icon-notification icon"></i></li>
+                    <li class="menu-item login vertical-list"><i class="icon-profile icon"></i><a href="#"><small>Leonardo Dicaprio</small></a></li>
+                    <li class="menu-item quit vertical-list modal-btn" data-modal="modal-logout"><i class="icon-quit icon"></i></li>
+                </ul>
+                <div class="sidebar-chat">
+                    <h3 class="chat-title">Your Manager</h3>
+                    <div class="chat-list modal-btn" data-modal="modal-chat">
+                        <div class="chat-img"><img src="./images/manager.png" alt=""></div>
+                        <a class="chat-link link"><small>Michael E.</small></a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!--Topbar-->
+        <nav class="topbar">
+            <ul class="topbar-menu" id="horizontal-list">
+                <li class="topbar-item wallet"><a href="#"><i class="icon-wallet icon"></i><span>$1,500.00</span><i class="icon-arrow-down icon"></i></a></li>
+                <li class="topbar-item notification"><a href="#"><i class="icon-notification icon"></i></a></li>
+                <li class="topbar-item profile"><a href="#"><i class="icon-profile icon"></i><small>Leonardo Dicaprio</small></a></li>
+                <li class="topbar-item quit modal-btn" data-modal="modal-logout"><a href="#"><i class="icon-quit icon"></i></a></li>
+            </ul>
+        </nav>
+
+        <!--Dashboard-->
+        <main class="main-content">
+
+            <!--General Statistics-->
+            <section class="subpage-wrapper" id="general">
+                <h2 class="subpage-title">general statistic</h2>
+
+                <div class="date-picker-wrapper wrapper">
+                    <div class="date-picker">
+                        <form class="date-form">
+                            <input class="date-start" type="text" name="date" placeholder="19-05-2019">
+                            <input class="date-end" type="text" name="date" placeholder="19-05-2019">
+                            <i class="icon-calendar icon"></i>
+                        </form>
+                        <button class="btn btn-refresh"><i class="icon-refresh icon"></i></button>
+                    </div>
+                </div>
+
+                <div class="chart-statistics-wrapper wrapper">
+                    <div class="row chart-statistics">
+                        <div class="col-md-5">
+                            <div class="row chart-statistics-detail">
+                                <h4 class="chart-statistics-text">Visit Signups</h4>
+                                <p class="chart-statistics-value">124</p>
+                            </div>
+                            <div class="row chart-statistics-detail">
+                                <h4 class="chart-statistics-text">FTD</h4>
+                                <p class="chart-statistics-value">445</p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="row chart-statistics-detail">
+                                <h4 class="chart-statistics-text">Net deposit</h4>
+                                <p class="chart-statistics-value">564</p>
+                            </div>
+                            <div class="row chart-statistics-detail">
+                                <h4 class="chart-statistics-text">Turn over</h4>
+                                <p class="chart-statistics-value">432</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chart-statistics">
+                        <h4>Earnings chart</h4>
+                        <div class="chart">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Links-->
+            <section class="subpage-wrapper" id="links">
+                <h2 class="subpage-title">links</h2>
+
+                <div class="btn-wrapper wrapper">
+                    <button class="btn" type="button">+ add new</button>
+                </div>
+
+                <div class="list-wrapper wrapper">
+                    <div class="list-item">
+                        <h4 class="list-item-title">Home page</h4>
+                        <a class="list-item-link" href="#">http://www.homepage.com</a>
+                        <div class="list-item-icons">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="list-item-title">Currently offer</h4>
+                        <a class="list-item-link" href="#">http://www.currently.com</a>
+                        <div class="list-item-icons">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="list-item-title">Blurpix</h4>
+                        <a class="list-item-link" href="#">http://www.blurpix.com</a>
+                        <div class="list-item-icons">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="list-item-title">Your site</h4>
+                        <a class="list-item-link" href="#">http://www.yoursite.com</a>
+                        <div class="list-item-icons">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="list-item-title">Google</h4>
+                        <a class="list-item-link" href="#">http://www.google.com</a>
+                        <div class="list-item-icons">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="list-item-title">Facebook</h4>
+                        <a class="list-item-link" href="#">http://www.facebook.com</a>
+                        <div class="list-item-icons">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="list-item-title">Dashboard</h4>
+                        <a class="list-item-link" href="#">http://www.dashboard.com</a>
+                        <div class="list-item-icons">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="list-item-title">Blurax</h4>
+                        <a class="list-item-link" href="#">http://www.blurax.com</a>
+                        <div class="list-item-icons">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="list-item-title">Piece of Wine</h4>
+                        <a class="list-item-link" href="#">http://www.pieceofwine.com</a>
+                        <div class="list-item-icons">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="list-item-title">Twitter</h4>
+                        <a class="list-item-link" href="#">http://www.twitter.com</a>
+                        <div class="list-item-icons">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-wrapper wrapper">
+                    <button class="btn" type="button">+ add new</button>
+                </div>
+            </section>
+
+            <!--Details-->
+            <section class="subpage-wrapper" id="details">
+                <h2 class="subpage-title">details</h2>
+            </section>
+
+            <!--Banners-->
+            <section class="subpage-wrapper" id="banners">
+                <h2 class="subpage-title">banners</h2>
+
+                <div class="btn-wrapper wrapper">
+                    <button class="btn" type="button">+ add new</button>
+                </div>
+
+                <div class="list-wrapper wrapper">
+                    <div class="list-item">
+                        <h4 class="list-item-title">Banner main</h4>
+                        <a class="list-item-link" href="#">http://www.website.com/main.gif</a>
+                        <div class="list-item-icons">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="list-item-title">Sign up banner</h4>
+                        <a class="list-item-link" href="#">http://www.website.com/signup.gif</a>
+                        <div class="list-item-icons">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="list-item-title">Banner left side</h4>
+                        <a class="list-item-link" href="#">http://www.website.com/leftside.gif</a>
+                        <div class="list-item-icons">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="list-item-title">Vertical banner</h4>
+                        <a class="list-item-link" href="#">http://www.website.com/vert.gif</a>
+                        <div class="list-item-icons">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="list-item-title">Front banner</h4>
+                        <a class="list-item-link" href="#">http://www.website.com/front.gif</a>
+                        <div class="list-item-icons">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <h4 class="list-item-title">Horizontal banner</h4>
+                        <a class="list-item-link" href="#">http://www.website.com/horizontal.gif</a>
+                        <div class="list-item-icons">
+                            <i class="icon-links"></i>
+                            <i class="icon-trash"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-wrapper wrapper">
+                    <button class="btn" type="button">+ add new</button>
+                </div>
+            </section>
+
+            <!--Personal Data-->
+            <section class="subpage-wrapper" id="personal-data">
+                <h2 class="subpage-title">personal data</h2>
+            </section>
+
+            <!--Payout-->
+            <section class="subpage-wrapper" id="payout">
+                <h2 class="subpage-title">payout</h2>
+            </section>
+
+            <!--Postback-->
+            <section class="subpage-wrapper" id="postback">
+                <h2 class="subpage-title">postback</h2>
+            </section>
+
+            <!--Modal-1-->
+            <div class="modals">
+                <div class="overlay" id="overlay">
+
+                    <div class="modal" id="modal-logout">
+                        <div class="btn-close js--close-modal">x</div>
+                        <h4 class="modal-logout-title">Do you really want to Quit?</h4>
+                        <div class="modal-logout-buttons">
+                            <button class="btn btn-grey js--close-modal">Cancel</button>
+                            <button class="btn btn-orange js--close-modal">Quit</button>
+                        </div>
+                    </div>
+
+                    <div class="modal" id="modal-chat">
+                        <div class="btn-close js--close-modal">x</div>
+                        <div class="sidebar-chat modal-chat">
+                            <h3 class="chat-title">Online chat with your personal manager</h3>
+                            <div class="chat-list">
+                                <div class="chat-img"><img src="./images/manager.png" alt=""></div>
+                                <a class="chat-link link" href="#"><span>Michael Ekwueme</span></a>
+                            </div>
+                            <div class="chat-field"></div>
+                            <div class="chat-form">
+                                <form>
+                                    <i class="icon-message icon"></i>
+                                    <input class="chat-input" type="text" placeholder="Enter your message..">
+                                </form>
+                                <button class="btn js--close-modal">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

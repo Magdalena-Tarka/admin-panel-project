@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>StyleGuide</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./vendor/bootstrap-grid/bootstrap-grid.css">
+    <link rel="stylesheet" href="./vendor/css/Glyphter.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <h2>H2 title. Lorem ipsum dolor sit amet.</h2>
+    <h3>H3 title. Lorem ipsum dolor sit amet.</h3>
+    <h4>H4 title. Lorem ipsum dolor sit amet.</h4>,<br>
+    <p>Lorem ipsum dolor sit amet, consectetur <strong>adipiscing elit</strong>. Maecenas blandit diam urna, eu <a href="#">dignissim</a> ex dignissim consequat. Duis porta lectus lorem, quis eleifend justo scelerisque eget. Duis ac sem et turpis tincidunt molestie in non ipsum. Maecenas ut augue erat. Phasellus eu est commodo est hendrerit tempor. Mauris dignissim ex vel magna aliquet, sit amet facilisis turpis tincidunt. Fusce quis blandit libero, sed dapibus nisl. Pellentesque vitae ligula sed tellus sagittis dapibus eu non metus. Mauris rutrum ligula ut sapien varius, pellentesque volutpat diam porta. Ut at nunc ac tortor dapibus sodales id at leo.</p><br>
+    <a href="#">Link to something.</a>
+    <ul>
+      <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
+      <li>Lorem ipsum dolor <strong>sit amet</strong></li>
+      <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
+    </ul>
+    <ol>
+      <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
+      <li>Lorem ipsum dolor <strong>sit amet</strong></li>
+      <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
+    </ol><br>
+    
+    <!--Logo-->
+    <a class="logo" href="#">Just do it</a>
+    <br>
+
+    <!--Button Toggler Menu-->
+    <button class="menu-toggler"><i class="fas fa-bars"></i></button>
+    <br>
+
+    <!--Menu/Menu Items-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <ul class="sidebar-menu" id="mobile-menu">
+            <li class="menu-item"><i class="icon-general icon"></i><a>General</a></li>
+            <li class="menu-item"><i class="icon-details icon"></i><a>Details</a></li>
+            <li class="menu-item"><i class="icon-links icon"></i><a>Links</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--Sidebar Chat Element-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 sidebar-chat">
+          <h3 class="sidebar-chat-title">Person</h3>
+          <div class="sidebar-chat-list">
+              <div class="sidebar-chat-img"><img src="./images/manager.png" alt=""></div>
+              <a class="sidebar-chat-link link"><small>Name</small></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Subpage Wrapper & Subpage Title-->
+    <section class="subpage-wrapper">
+      <h2 class="subpage-title">subpage title</h2>
+    </section>
+    <br>
+
+    <!--Date-picker-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 date-picker-wrapper">
+          <div class="date-picker">
+            <form class="date-form">
+              <input class="date-start" type="text" name="date" placeholder="19-05-2019">
+              <input class="date-end" type="text" name="date" placeholder="19-05-2019">
+              <i class="icon-calendar icon"></i>
+            </form>
+            <button class="btn btn-refresh"><i class="icon-refresh icon"></i></button>
+          </div>
+        </div>
+      </div>
+    </div><br>
+
+    <!--List (f.ex. of Links, Banners)-->
+    <div class="wrapper">
+      <div class="list-item">
+          <h4 class="list-item-title">Home page</h4>
+          <a class="list-item-link" href="#">http://www.homepage.com</a>
+          <div class="list-item-icons">
+              <i class="icon-links"></i>
+              <i class="icon-trash"></i>
+          </div>
+      </div>
+      <div class="list-item">
+          <h4 class="list-item-title">Currently offer</h4>
+          <a class="list-item-link" href="#">http://www.currently.com</a>
+          <div class="list-item-icons">
+              <i class="icon-links"></i>
+              <i class="icon-trash"></i>
+          </div>
+      </div>
+      <div class="list-item">
+          <h4 class="list-item-title">Blurpix</h4>
+          <a class="list-item-link" href="#">http://www.blurpix.com</a>
+          <div class="list-item-icons">
+              <i class="icon-links"></i>
+              <i class="icon-trash"></i>
+          </div>
+      </div>
+    </div><br>
+
+    <!--Modal-1-->
+    <div class="overlay wrapper" id="overlay">
+      <div class="modal" id="myModal">
+        <div class="btn-close js--close-modal">x</div>
+    
+        <h4>Witaj w modalu!</h4>
+        <p>Lorem ipsum dolor sit amet...</p>
+    
+        <button class="js--close-modal">Okay</button>
+      </div>
+    </div>
+
+</body>
+</html>
